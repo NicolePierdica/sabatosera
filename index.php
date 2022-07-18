@@ -96,7 +96,7 @@
 
             </p>
             <button class="btn transparent" id="sign-up-btn">
-              Add your data
+              Check your data
             </button>
           </div>
           <img src="img/log.svg" class="image" alt="" />

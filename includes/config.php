@@ -1,9 +1,9 @@
 <?php
 
 // database Connection variables
-define('HOST', 'localhost'); // Database host name ex. localhost
-define('USER', 'root'); // Database user. ex. root ( if your on local server)
-define('PASSWORD', ''); // user password  (if password is not set for user then keep it empty )
+define('HOST', 'sandbox.citynetgroup.com'); // Database host name ex. localhost
+define('USER', 'sandbox_pierdica'); // Database user. ex. root ( if your on local server)
+define('PASSWORD', '977@,+eR^=.B'); // user password  (if password is not set for user then keep it empty )
 define('DATABASE', 'user_accounts'); // Database Database name
 
 

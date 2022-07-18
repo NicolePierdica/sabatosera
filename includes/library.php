@@ -93,6 +93,31 @@ class AppLib
        }
    }
 
+   public function getInfo($company_name){
+
+    try {
+      $db = DataBase();
+      $sql ="SELECT * FROM users";
+      $query= $db -> prepare($sql);
+      $query-> bindParam(':cname', $company_name, PDO::PARAM_STR);
+      $query-> execute();
+      $result=$query->fetchAll(PDO::FETCH_OBJ);
+      if($query->rowCount() > 0)
+      {
+        foreach ($result as $row) {
+          
+          $company_name=$row->NomeAzienda;
+       
+        }
+
+      }
+
+  } catch (PDOException $e) {
+      exit($e->getMessage());
+  }
+
+   }
+
   
     
    
