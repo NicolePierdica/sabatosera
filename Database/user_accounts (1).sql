@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Lug 18, 2022 alle 11:23
+-- Creato il: Lug 19, 2022 alle 12:24
 -- Versione del server: 10.4.24-MariaDB
 -- Versione PHP: 8.1.6
 
@@ -20,27 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `user_accounts`
 --
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `adddata`
---
-
-CREATE TABLE `adddata` (
-  `data_id` int(11) NOT NULL,
-  `users_id` int(11) NOT NULL,
-  `NomeAzienda` varchar(255) NOT NULL,
-  `NomeProprietario` varchar(255) NOT NULL,
-  `Referente` varchar(255) NOT NULL,
-  `EmailAziendale` varchar(255) NOT NULL,
-  `Telefono` varchar(30) NOT NULL,
-  `Settore` varchar(255) NOT NULL,
-  `PartitaIva` varchar(20) NOT NULL,
-  `CodiceFiscale` varchar(30) NOT NULL,
-  `IndirizzoSede` varchar(255) NOT NULL,
-  `IndirizzoLegale` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -86,12 +65,6 @@ INSERT INTO `users` (`id`, `UserName`, `Email`, `Password`, `NomeAzienda`, `Refe
 --
 
 --
--- Indici per le tabelle `adddata`
---
-ALTER TABLE `adddata`
-  ADD PRIMARY KEY (`data_id`);
-
---
 -- Indici per le tabelle `users`
 --
 ALTER TABLE `users`
@@ -100,12 +73,6 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT per le tabelle scaricate
 --
-
---
--- AUTO_INCREMENT per la tabella `adddata`
---
-ALTER TABLE `adddata`
-  MODIFY `data_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT per la tabella `users`

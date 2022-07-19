@@ -78,7 +78,7 @@ class AppLib
              if(password_verify($password, $hashpass)) {
                  //echo "<script>alert('You Login successfully')</script>";
 
-                 header("Location: index.php");
+                 header("Location: checkdata.php");
                } else {
                  echo "<script>alert('You entered wrong password')</script>";
 
@@ -93,7 +93,7 @@ class AppLib
        }
    }
 
-   public function getInfo($company_name){
+   /*public function getInfo($company_name){
 
     try {
       $db = DataBase();
@@ -112,11 +112,15 @@ class AppLib
 
       }
 
+      else{
+        echo "<script>alert('User not registered')</script>";
+     }
+
   } catch (PDOException $e) {
       exit($e->getMessage());
   }
 
-   }
+   }*/
 
   
     
